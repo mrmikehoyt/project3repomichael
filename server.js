@@ -14,7 +14,7 @@ const io = socketio(server);
 //get configs from config file
 const config = require('./config/config');
 
-
+app.use( express.static(__dirname + '/../src/components/Chat'))
 
 const { addUser, removeUser, getUser, getAllUsers } = require('./users');
 
