@@ -8,7 +8,7 @@
     "node": "12.13.1"
   },
   "scripts": {
-    "start": "concurrently \"node server\"  \"react-scripts start\"",
+    "start": "react-scripts start",
     "server": "nodemon server",
     "frontend": "npm frontendreact",
     "frontendreact": "react-scripts start",
