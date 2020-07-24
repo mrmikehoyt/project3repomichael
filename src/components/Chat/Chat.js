@@ -19,9 +19,9 @@ const Chat = ({location}) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
 	const [messages, setMessages] = useState([]);
-	const ENDPOINTPORT = process.env.PORT || 4000
+	const ENDPOINTPORT = process.env.PORT2 || 4000
 
-	 const ENDPOINT = '/'
+	 const ENDPOINT = 'http://localhost:' + ENDPOINTPORT  
 	
 	useEffect(() => {
 		/**
