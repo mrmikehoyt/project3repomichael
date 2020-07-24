@@ -14,23 +14,7 @@ const io = socketio(server);
 //get configs from config file
 const config = require('./config/config');
 
-/**Mongo Connection  */
-const MONGODB_URI = config.mongodburi || 'mongodb://localhost:27017/chatter';
 
-mongoose.connect(MONGODB_URI, {
-	useNewUrlParser: true,
-	useCreateIndex: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true
-});
-
-mongoose.connection.on('connected', () => {
-    console.log('Connected to MongoDB');
-});
-mongoose.connection.on('error', (error) => {
-	console.log('Error connecting mongo db');
-  console.log(error);
-});
 
 const { addUser, removeUser, getUser, getAllUsers } = require('./users');
 
