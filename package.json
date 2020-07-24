@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "backend of the chat application using socket.io and express",
-  "main": "server.js",
+  "main": ".\\backend\\server.js",
   "engines": {
     "npm": "6.12.1",
     "node": "12.13.1"
