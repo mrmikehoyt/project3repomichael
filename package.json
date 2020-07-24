@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "backend of the chat application using socket.io and express",
-  "main": ".\\backend\\server.js",
+  "main": "server.js",
   "engines": {
     "npm": "6.12.1",
     "node": "12.13.1"
@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
-    "frontend": "cd .. && npm start --prefix frontend",
+    "frontend": "npm start --prefix frontend",
     "frontendinstall": "npm install --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
