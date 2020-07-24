@@ -21,7 +21,7 @@ const Chat = ({location}) => {
 	const [messages, setMessages] = useState([]);
 	const ENDPOINTPORT = process.env.PORT || 4000
 
-	 const ENDPOINT = 'http://localhost:' + ENDPOINTPORT  
+	 const ENDPOINT = '/'
 	
 	useEffect(() => {
 		/**
